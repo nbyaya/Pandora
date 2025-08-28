@@ -76,7 +76,7 @@
 		<entry name="Warning" text="警告" />
 		<entry name="Information" text="信息" />
 		<entry name="Question" text="问题" />
-		<entry name="OK" text="确定" />
+		<entry name="Ok" text="确定" />
 		<entry name="Loading" text="加载中" />
 		<entry name="Title" text="标题" />
 		<entry name="Welcome" text="欢迎" />

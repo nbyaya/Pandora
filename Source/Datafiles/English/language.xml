@@ -245,6 +245,7 @@
 		<entry name="RemoveHue" text="Remove Hue" />
 		<entry name="Search"
 			   text="Please enter the text you wish to search for. You can navigate the search results by using the following keys:&#xD;&#xA;&#xD;&#xA;F5: Previous result&#xD;&#xA;F8: Next result" />
+		<entry name="ClientHandleNotFound" text="Client handle not found. If UO is running, please try setting Tools -> Options -> Advanced -> Use Custom Client" />
 	</section>
 	<section name="Mul">
 		<entry name="Title" text="UO Files Managment" />
