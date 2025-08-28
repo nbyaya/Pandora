@@ -2,8 +2,8 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>BoxServer Readme</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>BoxServer 说明文档</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
 <!--
 p {
@@ -34,165 +34,165 @@ body {
 </style>
 </head>
 <body>
-<h3>BoxServer Readme file</h3>
-<p>Updated on: March 1, 2004<br>
-  BoxServer version: 1.0</p>
-<p><strong>Table of Contents</strong></p>
+<h3>BoxServer 说明文档</h3>
+<p>更新于: 2004年3月1日<br>
+  BoxServer 版本: 1.0</p>
+<p><strong>目录</strong></p>
 <ol>
-  <li>BoxServer: general information</li>
-  <li>Installation</li>
-  <li>Configuration</li>
-  <li>Stability</li>
-  <li>Security</li>
-  <li>Authentication</li>
-  <li>Spawners</li>
-  <li>Modules
+  <li>BoxServer: 基本信息</li>
+  <li>安装</li>
+  <li>配置</li>
+  <li>稳定性</li>
+  <li>安全性</li>
+  <li>身份验证</li>
+  <li>生成器</li>
+  <li>模块
     <ol>
-      <li>Core</li>
-      <li>Builder</li>
-      <li>Retrieve Datafiles</li>
-      <li>Script Explorer</li>
-      <li>Spawn Groups</li>
-      <li>Client List </li>
+      <li>核心</li>
+      <li>构建器</li>
+      <li>检索数据文件</li>
+      <li>脚本浏览器</li>
+      <li>生成组</li>
+      <li>客户端列表</li>
     </ol>
   </li>
-  <li>Uninstallation</li>
-  <li>Support</li>
+  <li>卸载</li>
+  <li>支持</li>
 </ol>
-<p class="style1">1. BoxServer: general information</p>
-<p>BoxServer is a set of scripts for RunUO that allow Pandora's Box to access additional functions. For a complete list of functions please review section 7: Modules.</p>
-<p>This file provides important information about running BoxServer, regarding its security and features. Please take a few moments to read it before installing the server exstensions.</p>
-<p>BoxServer has been introduced with Pandora's Box 2.0 and is based on .NET remoting, an architecture for inter domain communication. Simply put, BoxServer creates a special object of type BoxRemote on the RunUO server, and registers this object for remote access. The BoxRemote object is inside a library called BoxServer.dll that's installed into your \RunUO\folder. This is necessary, as opposed to just script it, because .NET remoting identifies the remote object through its type and assembly. The remote object has one public method called PerformRemoteRequest() that allows Pandora's Box to send and process a message (or packet) on the server.</p>
-<p>The basic transaction mechanism is as follows:</p>
+<p class="style1">1. BoxServer: 基本信息</p>
+<p>BoxServer是一套用于RunUO的脚本集合，允许Pandora's Box访问附加功能。有关完整的功能列表，请查看第7节：模块。</p>
+<p>本文档提供了关于运行BoxServer的重要信息，包括其安全性和功能。请在安装服务器扩展之前花几分钟时间阅读。</p>
+<p>BoxServer随Pandora's Box 2.0一起推出，基于.NET remoting架构，这是一种用于跨域通信的架构。简单来说，BoxServer在RunUO服务器上创建一个特殊类型的BoxRemote对象，并注册该对象以供远程访问。BoxRemote对象位于名为BoxServer.dll的库中，该库安装在您的\RunUO\文件夹中。这是必要的，因为.NET remoting通过对象的类型和程序集来识别远程对象。远程对象有一个名为PerformRemoteRequest()的公共方法，允许Pandora's Box向服务器发送和处理消息（或数据包）。</p>
+<p>基本事务机制如下：</p>
 <ol>
-  <li>Pandora creates a message (any object inherited from BoxMessage) and compresses it into a byte stream using ZLib.</li>
-  <li>Pandora connects to the remote server and invokes the PerformRemoteRequest method on the registered BoxRemote object, passing the data stream as parameter to the method.</li>
-  <li>The server decompresses the packet, performs authentication and if it succeeds, performs the action requested.</li>
-  <li>If the outcome of the process is an error, or if the action requires data sent from the server back to Pandora, the server will create a message as well, compress it using ZLib and send it back.</li>
+  <li>Pandora创建一个消息（任何继承自BoxMessage的对象）并使用ZLib将其压缩为字节流。</li>
+  <li>Pandora连接到远程服务器并调用已注册BoxRemote对象上的PerformRemoteRequest方法，将数据流作为参数传递给该方法。</li>
+  <li>服务器解压缩数据包，执行身份验证，如果成功，则执行请求的操作。</li>
+  <li>如果处理过程的结果是错误，或者如果操作需要从服务器发送回Pandora的数据，服务器也会创建消息，使用ZLib压缩并通过ZLib发送回来。</li>
 </ol>
-<p class="style1">2. Installation </p>
-<p>Installation is performed through a wizard which will perform the following actions:</p>
+<p class="style1">2. 安装</p>
+<p>安装通过向导执行，将执行以下操作：</p>
 <ol>
-  <li>Copy BoxServer.dll into your \RunUO\ folder</li>
-  <li>Update your \RunUO\Data\Assemblies.cfg file ensuring that the BoxServer.dll and System.Runtime.Remoting.dll libraries are loaded by RunUO.</li>
-  <li>Copy all the scripts to the target folder. You will be able to select which modules you wish to install.</li>
+  <li>将BoxServer.dll复制到您的\RunUO\文件夹</li>
+  <li>更新您的\RunUO\Data\Assemblies.cfg文件，确保BoxServer.dll和System.Runtime.Remoting.dll库由RunUO加载。</li>
+  <li>将所有脚本复制到目标文件夹。您可以选择要安装的模块。</li>
 </ol>
-<p class="style1">3. Configuration </p>
-<p>Configuration for the BoxServer is located in the Configuration.cs file in your BoxServer installation folder. You can configure the following properties:</p>
+<p class="style1">3. 配置</p>
+<p>BoxServer的配置位于BoxServer安装文件夹中的Configuration.cs文件中。您可以配置以下属性：</p>
 <ul>
-  <li>Port: BoxServer requires an unused port on the host machine. By default this value is 8035, but you might need to change it if this port is already used on your system. If this is the case, you will receive an error message in the RunUO console stating that the BoxServer port is already in use.</li>
-  <li>Message Hue: this allows you to specify a hue for all the messages generated in game by the BoxServer scripts.</li>
-  <li>Minimum AccessLevel: specifies the minimum AccessLevel required to access BoxServer functions. This can be overriden for a specific feature: review section 6: Authentication for more details.</li>
+  <li>端口：BoxServer需要主机机器上的未使用端口。默认情况下，此值为8035，但如果您的系统上已使用此端口，您可能需要更改它。如果是这种情况，您将在RunUO控制台中收到一条错误消息，说明BoxServer端口已被使用。</li>
+  <li>消息色调：这允许您为BoxServer脚本在游戏中生成的所有消息指定色调。</li>
+  <li>最低访问级别：指定访问BoxServer功能所需的最低AccessLevel。这可以为特定功能覆盖：查看第6节：身份验证了解更多详细信息。</li>
 </ul>
-<p class="style1">4. Stability </p>
-<p>The scripts composing BoxServer have been tested and are believed to be stable. .NET Remoting itself provides for additional stability because in most cases, errors in the BoxServer code are sent to the Pandora's Box client rather than to the RunUO process. This doesn't happen all the time though, here's a brief description of the process and of its implications.</p>
+<p class="style1">4. 稳定性</p>
+<p>组成BoxServer的脚本已经过测试，被认为是稳定的。.NET Remoting本身提供了额外的稳定性，因为在大多数情况下，BoxServer代码中的错误会发送到Pandora's Box客户端，而不是RunUO进程。但这并不总是发生，以下是过程的简要描述及其含义。</p>
 <ol>
-  <li>Pandora's Box performs an operation on the BoxServer. This includes authentication followed by the Perform() method of the message being processed. Anything that happens in this scope is managed by Pandora's Box, so if this code leads to an Exception, this Exception will NOT crash the server.</li>
-  <li>In some cases the Perform() method will interact with the user. For example, when placing a spawn group, it will assign a special target to the calling client. This is where the separation occurs: whatever happens after the target is assigned is managed by the server, so if this code ( namely OnTarget() ) leads to an Exception, it will crash the server. A lot of care has been put into evaluating such situations  to ensure the maximum stability possible.</li>
+  <li>Pandora's Box在BoxServer上执行操作。这包括身份验证，然后是正在处理的消息的Perform()方法。在此范围内发生的任何事情都由Pandora's Box管理，因此如果此代码导致异常，此异常将不会使服务器崩溃。</li>
+  <li>在某些情况下，Perform()方法将与用户交互。例如，当放置生成组时，它将为调用客户端分配特殊目标。这是分离发生的地方：目标分配后发生的任何事情都由服务器管理，因此如果此代码（即OnTarget()）导致异常，它将使服务器崩溃。已经投入大量精力来评估此类情况，以确保最大可能的稳定性。</li>
 </ol>
-<p class="style1">5. Security </p>
-<p><strong>5.1 Account Information Security</strong></p>
-<p>Account information is used by Pandora's Box to authenticate the user on the BoxServer. BoxServer has naturally access to this information through the Server.Accounting.Accounts class. Pandora's Box will collect this information from the user. The account name will be stored in the Pandora's Box profile in plain text, while the password will be hashed using a M5D hash.</p>
-<p>Pandora's Box will never store on file or permanently in memory a password in plain text. Instead, once the user has provided the password, it will perform the hashing. The hashing process implies loss of data about the original string, which makes it pretty much impossible for anyone to revert the hash into the original string. Also, even if not proved, it is strongly believed that no two different strings can lead to the same hash. In other words, there's no way to retrieve the account password from Pandora's Box.</p>
-<p>On the server, authentication is performed by calculating the hash on the password stored in the Accounts class. If the two hashes match, authentication succeeds.</p>
-<p><strong>5.2 Network Security</strong></p>
-<p>.NET remoting exposes an object on the host machine. This object can be instantiated by anyone who can connect to the remote service. The object called BoxRemote works in singletone mode, which means that only one object will be created and it will serve all remote requests coming from outside clients. A client can only call one method defined on the object, PerformRemoteRequest() that takes as parameters a Type name and a stream of bytes. The server will try to find the loaded type corresponding to the parameter provided: if not found, it will return a FeatureNotSupported message, otherwise it will try to decompress and deserialize the data. If this process is succesful, it will perform authentication on the message as described by the message class located on the server itself. This allows the server administrator to strictly control access to features of BoxServer, making the architecture as secure as desired.</p>
-<p>NOTE: The architecture relies on the trust you put into your staff. If you don't fully trust your staff, limit their access to the BoxServer or set the minimum AccessLevel to Administrator or Seer (by default it's GameMaster). While the default BoxServer installation doesn't feature any potentially dangerous situations, it could lead to annoying situations if not used wisely (think of a huge roof created over Britain). Special care should be taken in configuring the Script Explorer, please review the corresponding section for details.</p>
-<p class="style1">6. Authentication </p>
-<p>There are two levels of authentication for each feature installed on the server:</p>
+<p class="style1">5. 安全性</p>
+<p><strong>5.1 账户信息安全</strong></p>
+<p>账户信息由Pandora's Box用于在BoxServer上验证用户身份。BoxServer自然通过Server.Accounting.Accounts类访问此信息。Pandora's Box将从用户收集此信息。账户名称将以纯文本形式存储在Pandora's Box配置文件中，而密码将使用MD5哈希进行哈希处理。</p>
+<p>Pandora's Box永远不会在文件中或永久在内存中以纯文本形式存储密码。相反，一旦用户提供了密码，它将执行哈希处理。哈希过程意味着原始字符串数据的丢失，这使得任何人几乎不可能将哈希还原为原始字符串。此外，即使没有证明，人们强烈认为没有两个不同的字符串可以导致相同的哈希。换句话说，无法从Pandora's Box检索账户密码。</p>
+<p>在服务器上，身份验证是通过计算Accounts类中存储的密码上的哈希来执行的。如果两个哈希匹配，身份验证成功。</p>
+<p><strong>5.2 网络安全</strong></p>
+<p>.NET remoting在主机机器上公开一个对象。任何可以连接到远程服务的人都可以实例化此对象。名为BoxRemote的对象以单例模式工作，这意味着只会创建一个对象，它将为来自外部客户端的所有远程请求提供服务。客户端只能调用对象上定义的一个方法，PerformRemoteRequest()，它接受类型名称和字节流作为参数。服务器将尝试找到与提供的参数对应的已加载类型：如果未找到，它将返回FeatureNotSupported消息，否则它将尝试解压缩和反序列化数据。如果此过程成功，它将按照位于服务器本身上的消息类的描述对消息执行身份验证。这允许服务器管理员严格控制对BoxServer功能的访问，使架构尽可能安全。</p>
+<p>注意：架构依赖于您对员工的信任。如果您不完全信任您的员工，请限制他们对BoxServer的访问或将最低AccessLevel设置为Administrator或Seer（默认情况下是GameMaster）。虽然默认的BoxServer安装不包含任何潜在的危险情况，但如果使用不当，可能会导致令人讨厌的情况（想想在Britain上创建的巨大屋顶）。在配置脚本浏览器时应特别小心，请查看相应部分了解详细信息。</p>
+<p class="style1">6. 身份验证</p>
+<p>服务器上安装的每个功能都有两种级别的身份验证：</p>
 <ol>
-  <li>Basic Authentication: this is built in by default in the server itself. Authentication of username and password as described in the Security section is performed always and should not be removed. There's also a minimum AccessLevel required to access the server specified in the Configuration.cs file. This should never be set to Player, otherwise anyone with an account on your shard will be able to use some features.</li>
-  <li>Advanced Authentication: this is done by implementing the IAuthenticable interface on a single message (or feature). The IAuthenticable interface is defined as follows:
+  <li>基本身份验证：这是默认情况下在服务器本身中构建的。始终执行用户名和密码的身份验证，如安全性部分所述，不应移除。还有最低AccessLevel，用于访问服务器，此值不应设置为Player，否则您的服务器上的任何用户都可以使用某些功能。</li>
+  <li>高级身份验证：这是通过在单个消息（或功能）上实现IAuthenticable接口来完成的。IAuthenticable接口定义如下：
     <ul>
-      <li>AccessLevel <strong>MinAccessLevel</strong> { get; } : Overrides the minimum AccessLevel required to access this feature. Keep in mind that this can't be lower than the global minimum AccessLevel because that check is always performed first.</li>
-      <li>bool <strong>RequireOnlineMobile</strong> { get; } : Specifies if a feature requires the user to be actually online while using it. An example is creating a spawn group: the user must be logged into the server in order to target the location of the spawner.</li>
+      <li>AccessLevel <strong>MinAccessLevel</strong> { get; } : 覆盖访问此功能所需的最低AccessLevel。请记住，此值不能低于全局最低AccessLevel，因为此检查始终首先执行。</li>
+      <li>bool <strong>RequireOnlineMobile</strong> { get; } : 指定使用此功能时用户是否必须实际在线。例如，创建生成组：用户必须登录服务器才能定位生成器的位置。</li>
     </ul>
   </li>
 </ol>
-  <p>Implementing the IAuthenticable interface is very simple and can be done on any class that inherits from BoxMessage (wouldn't make much sense on other classes). If implemented correctly, the server will automatically perform the checks implied by the interface. You can see an example of this implementation in Modules\SpawnGroups\SpawnMessage.cs.</p>
-  <p class="style1">7. Spawners</p>
-  <p>BoxServer deals with spawner objects in two modules:</p>
+  <p>实现IAuthenticable接口非常简单，可以对任何继承自BoxMessage的类进行（对其他类来说意义不大）。如果实现正确，服务器将自动执行接口暗示的检查。您可以在Modules\SpawnGroups\SpawnMessage.cs中看到此实现的示例。</p>
+  <p class="style1">7. 生成器</p>
+  <p>BoxServer在两个模块中处理生成器对象：</p>
   <ol>
-    <li>The SpawnData datafile: this is used to display the existing spawns on the Pandora's Box travel map. The generator evaluates each spawner object and converts it to a SpawnEntry object that carries information used in Pandora's Box.</li>
-    <li>The Spawn Groups module: as the name implies, this converts a spawn group defined in Pandora's Box to an actual spawn in the world.</li>
+    <li>SpawnData数据文件：用于在Pandora's Box旅行地图上显示现有生成器。生成器评估每个生成器对象并将其转换为在Pandora's Box中使用的SpawnEntry对象。</li>
+    <li>生成组模块：顾名思义，此模块将Pandora's Box中定义的生成组转换为实际生成。</li>
   </ol>
-  <p>Both of these actions require knowledge of the shard specific spawner object. The installation wizard currently supports the default Spawner and the XmlSpawner, providing users with code designed to work correctly with those objects.</p>
-  <p>All spawner specific code is located in the file Core\SpawnerHelper.cs. In case your spawner is not supported by default by BoxServer, you can choose the 'Other' option in the wizard and fill the methods yourself. The SpawnerHelper class consists of three static methods and one property: </p>
+  <p>这两种操作都需要了解服务器特定的生成器对象。当前的安装向导支持默认生成器和XmlSpawner，为用户提供设计用于与这些对象正确工作的代码。</p>
+  <p>所有生成器特定代码都位于Core\SpawnerHelper.cs文件中。如果您使用的生成器不受BoxServer默认支持，您可以选择向导中的'其他'选项并自行填写方法。SpawnerHelper类包含三个静态方法和一个属性：</p>
   <ol>
-    <li>public static Type <strong>SpawnerType</strong> { get; } : defines the type of the object used as spawner. This is used to identify the object that act as spawners when generating the SpawnData datafile.</li>
-    <li>public static SpawnEntry <strong>SpawnerToData</strong>( Item spawnerItem ) : this method converts a spawner item into a SpawnEntry object that carries information about the spawn ( location and so on ). This is used to build the SpawnData.</li>
-    <li>public static Item <strong>CreateBoxSpawn</strong>( BoxSpawn spawn ) : this method converts a BoxSpawn object that represents a spawn group, into a spawner object filled with the creatures that will be spawning. The spawner object returned by this method should not be active.</li>
-    <li>public static void <strong>StartSpawner</strong>( Item spawner ) : this method is called when the spawner carrying the spawn group has been placed in the world and must be actived and spawned.</li>
+    <li>public static Type <strong>SpawnerType</strong> { get; } : 定义用于生成器的对象类型。这用于在生成SpawnData数据文件时识别作为生成器起作用的对象。</li>
+    <li>public static SpawnEntry <strong>SpawnerToData</strong>( Item spawnerItem ) : 此方法将生成器物品转换为SpawnEntry对象，其中包含生成信息（位置等）。这用于构建SpawnData。</li>
+    <li>public static Item <strong>CreateBoxSpawn</strong>( BoxSpawn spawn ) : 此方法将BoxSpawn对象转换为填充有将生成生物的生成器对象。此方法返回的生成器对象不应处于活动状态。</li>
+    <li>public static void <strong>StartSpawner</strong>( Item spawner ) : 此方法在生成器携带生成组放置在世界中时调用，必须激活并生成。</li>
   </ol>
-  <p>When you select the 'Other' option, you will be provided with skeleton code in SpawnerHelper.cs and commented out code for the default RunUO Spawner so you have an idea of how you can code your specific implementation.</p>
-  <p>NOTE: I will be providing support for custom spawners in my free time. You can contact me about this through the forums on my site. I am also willing to add more spawners into the installer, if you're the author of a spawner object and wish to be officially supported by Pandora's Box please compile a SpawnerHelper class specific for your spawner, and email me both scripts at <a href="mailto:arya@box.it">arya@box.it</a></p>
-  <p class="style1">8. Modules</p>
-  <p>BoxServer is composed of modules. You can choose which modules you wish to install during the installation wizard, and in case you wish to remove a module at a later time you can simply delete its folder in the Modules directory and restart your server. Please don't remove any files from the Core folder as they might compromise the BoxServer. I will not provide support for such situations. </p>
+  <p>当您选择'其他'选项时，您将获得SpawnerHelper.cs中的骨架代码和默认RunUO生成器的注释代码，以便您了解如何编写您的特定实现。</p>
+  <p>注意：我将在业余时间提供对自定义生成器的支持。您可以通过我的网站论坛联系我。如果您是生成器对象的作者，并希望Pandora's Box官方支持，请为您的生成器编写一个特定的SpawnerHelper类，并将脚本发送给我，地址为<a href="mailto:arya@box.it">arya@box.it</a></p>
+  <p class="style1">8. 模块</p>
+  <p>BoxServer由模块组成。您可以在安装向导中选择要安装的模块，如果您稍后想要移除模块，只需删除Modules目录中的相应文件夹并重新启动服务器即可。请不要从Core文件夹中删除任何文件，因为它们可能会破坏BoxServer。我不会为此类情况提供支持。 </p>
   <blockquote>
-    <p class="style1">1. Core</p>
-    <p>As the name implies, the Core module includes classes used for the main functionality of BoxServer:</p>
+    <p class="style1">1. 核心</p>
+    <p>顾名思义，核心模块包含用于BoxServer主要功能的类：</p>
   </blockquote>
   <ul>
-    <li>Login functionality: provides Pandora's Box with a quick authentication for the user before allowing access to other BoxServer features.</li>
-    <li>Various data structures used throughout the BoxServer.</li>
-    <li>Various methods used by the BoxServer scripts.</li>
-    <li>Error messages</li>
-    <li>Datafile generators: even if in a separate directory for easier identification, these scripts are part of the BoxServer core and should not be removed (otherwise other modules might fail to compile). The generation scripts can be accessed through the BoxServer control panel (see the in game commands sections for more details).</li>
+    <li>登录功能：为Pandora's Box提供快速身份验证，以便在访问其他BoxServer功能之前允许访问。</li>
+    <li>贯穿BoxServer脚本的各类数据结构。</li>
+    <li>BoxServer脚本使用的各类方法。</li>
+    <li>错误消息</li>
+    <li>数据文件生成器：虽然放在单独的目录中便于识别，但这些脚本仍然是BoxServer的核心，不应移除（否则其他模块可能无法编译）。数据生成脚本可以通过BoxServer控制面板访问（请参阅游戏命令部分了解更多详细信息）。</li>
   </ul>
   <blockquote>
-    <p>Attempting to modify the core features is totally unsupported because it might break the behaviour of the BoxServer, of Pandora's Box and might place security threats on your server.</p>
-    <p class="style1">2. Builder</p>
-    <p><strong>Authentication</strong>: IAuthenticable<br>
+    <p>尝试修改核心功能是完全不支持的，因为这可能会破坏BoxServer的行为，Pandora's Box的行为，并可能对您的服务器构成安全威胁。</p>
+    <p class="style1">2. 构建器</p>
+    <p><strong>身份验证</strong>: IAuthenticable<br>
       <strong>MinAccessLevel</strong>: GameMaster<br>
       <strong>RequireOnlineMobile</strong>: true </p>
-    <p>This module is used by two and possibly more features of Pandora's Box (namely roofing and the random tiler). When you create a structure of items through the roofing tool, for instance, using the Generate through Server option, the structure will be automatically saved in the Builder class. This will allow users of Pandora's Box to quickly move, remove or hue the whole structure.</p>
-    <p class="style1">3. Retrieve Datafiles </p>
-    <p><strong>Authentication</strong>: Basic <br>
-      <strong>MinAccessLevel</strong>: BoxServer default <br>
-      <strong>RequireOnlineMobile</strong>: none (false)</p>
-    <p>This module allows users to retrieve datafiles used in Pandora's Box to display custom items, mobiles and so on. The datafiles available are:</p>
+    <p>此模块用于Pandora's Box的多个功能（如屋顶和随机铺路器）。当您通过屋顶工具创建物品结构时，例如，使用生成通过服务器选项，结构将自动保存在Builder类中。这将允许Pandora's Box用户快速移动、移除或改变整个结构。</p>
+    <p class="style1">3. 检索数据文件</p>
+    <p><strong>身份验证</strong>: 基本 <br>
+      <strong>MinAccessLevel</strong>: BoxServer默认 <br>
+      <strong>RequireOnlineMobile</strong>: 无 (false)</p>
+    <p>此模块允许用户检索Pandora's Box用于显示自定义物品、生物等的数据文件。可用的数据文件有：</p>
   </blockquote>
 
   <ul>
-    <li>BoxData [ RunUO\TheBox\BoxData.xml ] : contains the definitions of all constructable items and mobiles scripted on the server.</li>
-    <li>PropsData [ RunUO\TheBox\PropsData.xml ] : contains the definitions of all the properties defined on constructable items and mobiles. It is used on the Props tab in Pandora's Box.</li>
-    <li>SpawnData [ RunUO\TheBox\SpawnData.xml ] : contains information about the spawns in the world, used to display them on the travel map in Pandora's Box.</li>
+    <li>BoxData [ RunUO\TheBox\BoxData.xml ] : 包含服务器上所有可构造物品和生物的定义。</li>
+    <li>PropsData [ RunUO\TheBox\PropsData.xml ] : 包含所有在可构造物品和生物上定义的属性的定义。它用于Pandora's Box的Props标签。</li>
+    <li>SpawnData [ RunUO\TheBox\SpawnData.xml ] : 包含世界中生成信息，用于在Pandora's Box旅行地图上显示。</li>
   </ul>
 <blockquote>
-    <p>This module is very useful for distributing shard specific information to the staff. All the datafiles are generated in the RunUO\TheBox folder by default. If you wish to allow users to retrieve only a part of available datafiles (for example only BoxData), simply don't generate (or delete) the other datafiles from the RunUO\TheBox folder.</p>
-    <p class="style1">4. Script Explorer</p>
-    <p><strong>Authentication</strong>: Custom <br>
-      <strong>MinAccessLevel</strong>: BoxServer default <br>
-      <strong>RequireOnlineMobile</strong>: none (false)</p>
-    <p>This is a powerful yet potentially dangerous module. Simply put, it's a FTP architecture limited to .cs, .vb, .xml and .txt files. It allows remote users to download, upload, delete and move files and is intended to aid remote scripting.</p>
-    <p>In order to minimize risks associated with this module, it requires a special configuration located in the file \Modules\ScriptExplorer\Configuration.cs. You must provide a user esplicit permission for this module by specifying their account name and the folders they are allowed to access. All folders are specified relatively to the \Scripts\ folder on the server. The Configuration.cs file explains in detail how to register a user for this module.</p>
-    <p>Whenever a user tries to use this module, the script will check if the user is registered, and if so it will check if the file being modified belongs to the user's registered folder(s).</p>
-    <p>IMPORTANT: This module is active only when the server is running. If a remote user modifies a script, or uploads code that fails to compile, and then restarts the server, the server will not restart and will need mainteinance by other means. Please use this module carefully.</p>
-    <p class="style1">5. Spawn Groups </p>
-    <p><strong>Authentication</strong>: IAuthenticable <br>
+    <p>此模块对于向工作人员分发服务器特定信息非常有用。所有数据文件默认在RunUO\TheBox文件夹中生成。如果您希望用户仅检索部分可用数据文件（例如仅BoxData），只需不生成（或删除）RunUO\TheBox文件夹中的其他数据文件即可。</p>
+    <p class="style1">4. 脚本浏览器</p>
+    <p><strong>身份验证</strong>: 自定义 <br>
+      <strong>MinAccessLevel</strong>: BoxServer默认 <br>
+      <strong>RequireOnlineMobile</strong>: 无 (false)</p>
+    <p>这是一个强大但潜在危险的模块。简单来说，它是一个FTP架构，仅限于.cs、.vb、.xml和.txt文件。它允许远程用户下载、上传、删除和移动文件，并旨在帮助远程脚本。</p>
+    <p>为了最小化此模块的风险，需要一个特殊的配置，位于文件\Modules\ScriptExplorer\Configuration.cs中。您必须为该模块提供用户显式权限，方法是指定其账户名称和允许访问的文件夹。所有文件夹都相对于服务器上的\Scripts\文件夹指定。Configuration.cs文件详细说明了如何为该模块注册用户。</p>
+    <p>每当用户尝试使用此模块时，脚本都会检查用户是否已注册，如果是，则检查文件是否属于用户注册的文件夹（s）。</p>
+    <p>重要提示：此模块仅在服务器运行时激活。如果远程用户修改脚本，或上传无法编译的代码，然后重新启动服务器，服务器将不会重新启动，需要其他维护手段。请谨慎使用此模块。</p>
+    <p class="style1">5. 生成组</p>
+    <p><strong>身份验证</strong>: IAuthenticable <br>
       <strong>MinAccessLevel</strong>: GameMaster <br>
       <strong>RequireOnlineMobile</strong>: true</p>
-  <p>This module allows users to spawn full spawn groups as defined in Pandora's Box. For more information about spawners refer to section 7.</p>
-    <p class="style1">6. Client List </p>
-    <p><strong>Authentication</strong>: IAuthenticable to perform commands on clients <br>
+  <p>此模块允许用户在Pandora's Box中生成完整的生成组。有关生成器的更多信息，请参阅第7节。</p>
+    <p class="style1">6. 客户端列表</p>
+    <p><strong>身份验证</strong>: 对客户端执行命令 <br>
         <strong>MinAccessLevel</strong>: GameMaster <br>
-        <strong>RequireOnlineMobile</strong>: true to perform commands on clients </p>
-  <p>This module transfers the client list to Pandora's Box. Information collected include: player and account name, last login time, location, map and serial. This module is used in Pandora's Box by the Client Map which displays where clients are located on a world map, and by the Client List which lists (allowing different sorting orders) all the clients connected. This second mode also allows to quickly go to the selected client, view their props or client information and for administrators also their account details. </p>
+        <strong>RequireOnlineMobile</strong>: true 对客户端执行命令 </p>
+  <p>此模块将客户端列表传输到Pandora's Box。收集的信息包括：玩家和账户名称、最后登录时间、位置、地图和序列。此模块用于Pandora's Box的客户端地图，用于显示客户端在世界地图上的位置，以及客户端列表，用于列出（允许不同排序）所有连接的客户端。第二种模式还允许快速转到选定的客户端，查看其属性或客户端信息，对于管理员还允许查看其账户详情。 </p>
   </blockquote>
-  <p class="style1"><strong>9. Uninstallation</strong></p>
-  <p>Uninstalling the BoxServer is very easy and is done in three steps:</p>
+  <p class="style1"><strong>9. 卸载</strong></p>
+  <p>卸载BoxServer非常简单，分为三个步骤：</p>
   <ol>
-    <li>Delete the file \RunUO\BoxServer.dll</li>
-    <li>Open the file \RunUO\Data\Assemblies.cfg and remove the following entries:
+    <li>删除文件 \RunUO\BoxServer.dll</li>
+    <li>打开文件 \RunUO\Data\Assemblies.cfg 并移除以下条目：
       <ol>
         <li>BoxServer.dll</li>
-        <li>System.Runtime.Remoting.dll (keep in mind that other software might need this, such as UOArchitect or other <a href="http://www.orbsydia.com" target="_blank">Orbsydia</a> programs)</li>
+        <li>System.Runtime.Remoting.dll（请记住，其他软件可能需要此项，例如UOArchitect或Orbsydia的其他程序）</li>
       </ol>
     </li>
-    <li>Delete all the scripts within the BoxServer folder.</li>
+    <li>删除BoxServer文件夹中的所有脚本。</li>
   </ol>
-  <p class="style1"><strong>10. Support</strong></p>
-  <p>Support for the BoxServer is provided through the BoxServer forum located at <a href="http://arya.runuo.com/" target="_blank">http://arya.runuo.com/</a> </p>
+  <p class="style1"><strong>10. 支持</strong></p>
+  <p>BoxServer的支持通过位于<a href="http://arya.runuo.com/" target="_blank">http://arya.runuo.com/</a>的BoxServer论坛提供 </p>
   <blockquote>
     <p>&nbsp;</p>
   </blockquote>

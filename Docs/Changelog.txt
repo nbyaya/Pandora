@@ -1,54 +1,54 @@
-Pandora's Box 4.0.0.* (Updated on 05.04.2018)
-- Replaced Ultima SDK imports with embedded Ultima SDK build.
-- Implemented support for UOP file format for maps, gumps, sounds and statics.
-- Removed redundant code, performed full code-clean-up.
-- Removed map rotation feature; it skewed the output with new maps.
-- Fixed an issue with hues not properly applying.
-- Fixed an issue where minimizing would cause a stack overflow.
-- Add support for Ter Mur map.
+Pandora's Box 4.0.0.* (更新于 2018年05月04日)
+- 用嵌入式Ultima SDK构建替换了Ultima SDK导入
+- 实现了对UOP文件格式的支持，包括地图、界面、音效和静态对象
+- 移除了冗余代码，进行了完整的代码清理
+- 移除了地图旋转功能；新地图会导致输出扭曲
+- 修复了色调无法正确应用的问题
+- 修复了最小化时会导致堆栈溢出的问题
+- 添加了对Ter Mur地图的支持
 
-Pandora's Box 3.0.0.5 (Updated on 20.07.2010)
-- Issue 46: Power Scroll issue
-- Issue 47: Runics dont give resource option.
-- Issue 50: LocalizedSign LabelNumber no longer limited by 50000
-- Issue 51: Note's does not save the correct time of day.
-- Issue 56: BoxServer password issue
-- Improved error management
-- Implemented Log4Net
-- Removed some duplicated entries in english translation file
-- Added neutral XML for translating in new languages
+Pandora's Box 3.0.0.5 (更新于 2010年07月20日)
+- 问题46：力量卷轴问题
+- 问题47：符文工具不提供资源选项
+- 问题50：本地化标志LabelNumber不再受50000限制
+- 问题51：笔记无法保存正确的白天时间
+- 问题56：BoxServer密码问题
+- 改进了错误管理
+- 实现了Log4Net
+- 移除了英语翻译文件中的一些重复条目
+- 添加了中性XML文件，便于翻译成新语言
 
-Pandora's Box 3.0.0.4 | 05-24-09
-- Fixed the bug that makes Pandora think that the client isn't running.
+Pandora's Box 3.0.0.4 | 2009年05月24日
+- 修复了使Pandora认为客户端没有运行的错误
 
-Pandora's Box 3.0.0.3 | 05-23-09
-- Added a way to fix the Ultima Online registry key if missing or corrupted.
-- Added a message when you use commands that needs client and it isn't found.
-- Fixed Profile Exporting, now should work.
-- Corrected the link to Arya and our website.
-- Corrected the name of AnkhNorth, now is AnkhWest.
-- About form should be TopMost.
-- Cleaned up and refactored a bit the code.
-- Fixed random bugs.
+Pandora's Box 3.0.0.3 | 2009年05月23日
+- 添加了修复Ultima Online注册表键的方法（如果缺失或损坏）
+- 当使用需要客户端但未找到客户端的命令时添加了消息提示
+- 修复了配置文件导出功能，现在应该可以正常工作
+- 更正了Arya和我们网站的链接
+- 更正了AnkhNorth的名称，现在是AnkhWest
+- 关于窗口应该是置顶的
+- 清理并重构了部分代码
+- 修复了随机错误
 
-Pandora's Box 3.0.0.2 | 01-19-09
-- All project will compile with Net Framework 2.0.
-- Trammel has own map after ML.
-- Fixed LanguageSelector appearing behind splash screen.
-- Corrected AboutForm staff names.
+Pandora's Box 3.0.0.2 | 2009年01月19日
+- 所有项目都将使用Net Framework 2.0编译
+- Trammel在ML之后拥有自己的地图
+- 修复了LanguageSelector出现在启动画面后面的问题
+- 更正了AboutForm中的员工姓名
 
-Pandora's Box 3.0.0.1 | 01-18-09
-- Fixed Profile appearing behind splash screen.
-- Fixed Mondain's Legacy maps Sizes.
-- Now the Box will read from map1.mul statics1.mul informations about Trammel.
-- Changed Profile directory : now you'll find profiles at
-	VISTA USERS: "%AppData%\Roaming\Pandora's Box 3" 
-	XP USERS: "%AppData%\Pandora's Box 3" 
-- About Box will display version correctly.
+Pandora's Box 3.0.0.1 | 2009年01月18日
+- 修复了配置文件出现在启动画面后面的问题
+- 修复了Mondain's Legacy地图尺寸
+- 现在Box将从map1.mul statics1.mul读取关于Trammel的信息
+- 更改了配置文件目录：现在您可以在以下位置找到配置文件
+	VISTA用户: "%AppData%\Roaming\Pandora's Box 3" 
+	XP用户: "%AppData%\Pandora's Box 3" 
+- 关于Box将正确显示版本
 
-Pandora's Box 3.0 alpha version:
+Pandora's Box 3.0 测试版本:
 
-- Fixed some compile/performance errors.
-- Disabled Next button when creating a new profile and map rendering.
-- Remove obsolete code.
-- Converted all the code (except for BoxServer) from Net Framework 1.0 to Net Framework 2.0.
+- 修复了一些编译/性能错误
+- 在创建新配置文件和地图渲染时禁用下一步按钮
+- 移除过时的代码
+- 将所有代码（除了BoxServer）从Net Framework 1.0转换为Net Framework 2.0
