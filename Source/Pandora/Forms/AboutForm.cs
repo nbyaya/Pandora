@@ -56,6 +56,66 @@ namespace TheBox.Forms
 			InitializeComponent();
 
 			labVersion.Text = Application.ProductVersion;
+			
+			// Apply localization
+			ApplyLocalization();
+		}
+		
+		private void ApplyLocalization()
+		{
+			try
+			{
+				// Check current language from profile
+				var currentLang = Pandora.Profile?.Language ?? "English";
+				var isChinese = currentLang == "Chinese";
+				
+				if (isChinese)
+				{
+					// Apply Chinese localization
+					this.bClose.Text = Pandora.Localization.TextProvider["Common.Close"];
+					this.label2.Text = Pandora.Localization.TextProvider["Common.Version"];
+					this.groupBox2.Text = Pandora.Localization.TextProvider["Common.PandoraStaff"];
+					this.groupBox1.Text = Pandora.Localization.TextProvider["Common.Credits"];
+					this.label5.Text = Pandora.Localization.TextProvider["Common.Code"];
+					this.label7.Text = Pandora.Localization.TextProvider["Common.Artwork"];
+					this.label9.Text = Pandora.Localization.TextProvider["Common.ThirdPartyLibraries"];
+					
+					// Update the link label text in Chinese
+					var linkText = string.Format("{0}-{1}-{2} :  https://github.com/vita-nex/pandora",
+						Pandora.Localization.TextProvider["Common.Updates"],
+						Pandora.Localization.TextProvider["Common.BugsReport"],
+						Pandora.Localization.TextProvider["Common.FeaturesRequests"]);
+					this.linkLabel1.Text = linkText;
+					
+					// Set correct LinkArea for Chinese text to cover the entire GitHub URL
+					// The URL starts after "更新-错误报告-功能请求 :  " (which is 15 characters in Chinese)
+					this.linkLabel1.LinkArea = new System.Windows.Forms.LinkArea(15, 38);
+					
+					// Add Chinese localization credit after Tarion's name
+					this.label1.Text = "- Smjert\r\n- Kons\r\n- Neo\r\n- Dies Irae\r\n- Tarion\r\n- 鸦鸦汉化";
+				}
+				else
+				{
+					// Apply English text for non-Chinese languages
+					this.bClose.Text = "Close";
+					this.label2.Text = "Version :";
+					this.groupBox2.Text = "Pandora's 3.0 staff:";
+					this.groupBox1.Text = "Credits till 2.0";
+					this.label5.Text = "Code:";
+					this.label7.Text = "Artwork:";
+					this.label9.Text = "Third party libraries";
+					
+					// Update the link label text in English
+					this.linkLabel1.Text = "Updates-bugs report-features requests :  GitHub (migrated)";
+				}
+				
+				// Remove the website link for Tarion since it's expired (for all languages)
+				this.linkLabelTarion.Visible = false;
+			}
+			catch
+			{
+				// If localization fails, keep original text
+			}
 		}
 
 		/// <summary>
@@ -423,8 +483,8 @@ namespace TheBox.Forms
 			this.linkLabel1.Size = new System.Drawing.Size(413, 17);
 			this.linkLabel1.TabIndex = 0;
 			this.linkLabel1.TabStop = true;
-			this.linkLabel1.Tag = "http://code.google.com/p/pandorasbox3/";
-			this.linkLabel1.Text = "Updates-bugs report-features requests :  http://code.google.com/p/pandorasbox3/";
+			this.linkLabel1.Tag = "https://github.com/vita-nex/pandora";
+			this.linkLabel1.Text = "Updates-bugs report-features requests :  https://github.com/vita-nex/pandora";
 			this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.linkLabel1.UseCompatibleTextRendering = true;
 			this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(
