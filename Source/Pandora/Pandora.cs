@@ -321,7 +321,7 @@ namespace TheBox
 			if (!success)
 			{
 				_ = MessageBox.Show(
-					"Client handle not found. If UO is running, try to set Tools -> Options -> Advanced -> Use a custom client");
+					Pandora.Localization.TextProvider["Misc.ClientHandleNotFound"]);
 			}
 		}
 

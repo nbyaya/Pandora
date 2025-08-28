@@ -274,7 +274,7 @@ namespace TheBox.Pages
 			this.boxButton4.Name = "boxButton4";
 			this.boxButton4.Size = new System.Drawing.Size(60, 23);
 			this.boxButton4.TabIndex = 3;
-			this.boxButton4.Text = "Restock";
+			this.boxButton4.Text = "Misc.Restock";
 			// 
 			// boxButton3
 			// 
@@ -287,7 +287,7 @@ namespace TheBox.Pages
 			this.boxButton3.Name = "boxButton3";
 			this.boxButton3.Size = new System.Drawing.Size(60, 23);
 			this.boxButton3.TabIndex = 2;
-			this.boxButton3.Text = "Players";
+			this.boxButton3.Text = "Misc.Players";
 			// 
 			// boxButton2
 			// 
@@ -300,7 +300,7 @@ namespace TheBox.Pages
 			this.boxButton2.Name = "boxButton2";
 			this.boxButton2.Size = new System.Drawing.Size(60, 23);
 			this.boxButton2.TabIndex = 1;
-			this.boxButton2.Text = "Misc";
+			this.boxButton2.Text = "Misc.Misc";
 			// 
 			// boxButton1
 			// 
@@ -313,7 +313,7 @@ namespace TheBox.Pages
 			this.boxButton1.Name = "boxButton1";
 			this.boxButton1.Size = new System.Drawing.Size(60, 23);
 			this.boxButton1.TabIndex = 0;
-			this.boxButton1.Text = "Bank";
+			this.boxButton1.Text = "Misc.Bank";
 			// 
 			// boxButton5
 			// 
@@ -326,7 +326,7 @@ namespace TheBox.Pages
 			this.boxButton5.Name = "boxButton5";
 			this.boxButton5.Size = new System.Drawing.Size(60, 23);
 			this.boxButton5.TabIndex = 4;
-			this.boxButton5.Text = "Items";
+			this.boxButton5.Text = "Misc.Items";
 			// 
 			// boxButton6
 			// 
@@ -339,7 +339,7 @@ namespace TheBox.Pages
 			this.boxButton6.Name = "boxButton6";
 			this.boxButton6.Size = new System.Drawing.Size(60, 23);
 			this.boxButton6.TabIndex = 5;
-			this.boxButton6.Text = "Cast";
+			this.boxButton6.Text = "Misc.Cast";
 			// 
 			// groupBox4
 			// 

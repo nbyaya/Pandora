@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ButtonDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Caption="Client">
+<ButtonDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Caption="Misc.Client">
   <LeftObject xsi:type="MultiCommandDef" DefaultIndex="4">
     <Commands>
       <anyType xsi:type="MenuCommand" Caption="Props" Command="Props" UsePrefix="true" />

@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
-<ButtonDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Caption="Where">
+<ButtonDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Caption="Misc.Where">
   <LeftObject xsi:type="MenuCommand" Command="Where" UsePrefix="true" />
 </ButtonDef>

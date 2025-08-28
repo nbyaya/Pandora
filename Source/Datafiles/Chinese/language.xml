@@ -1,0 +1,688 @@
+<?xml version="1.0"?>
+
+<Data language="Chinese">
+	<section name="Common">
+		<entry name="Select" text="选择" />
+		<entry name="Add" text="添加" />
+		<entry name="Browse" text="浏览" />
+		<entry name="Open" text="打开" />
+		<entry name="Test" text="测试" />
+		<entry name="About" text="关于" />
+		<entry name="Location" text="位置" />
+		<entry name="Desc" text="描述" />
+		<entry name="Type" text="类型" />
+		<entry name="Z" text="Z" />
+		<entry name="Height" text="高度" />
+		<entry name="Load" text="加载" />
+		<entry name="No" text="否" />
+		<entry name="PropsData" text="属性数据" />
+		<entry name="Change" text="更改" />
+		<entry name="Options" text="选项" />
+		<entry name="GlobalWarning" text="您即将在所有现有物品和生物上使用命令，包括未登录的玩家。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="OnlineWarning" text="您即将在当前登录的所有玩家上执行命令。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="Index" text="索引" />
+		<entry name="Maps" text="地图" />
+		<entry name="Default" text="默认" />
+		<entry name="Find" text="查找" />
+		<entry name="SpawnData" text="生成数据" />
+		<entry name="ID" text="ID" />
+		<entry name="Width" text="宽度" />
+		<entry name="Exit" text="退出" />
+		<entry name="Profile" text="配置文件" />
+		<entry name="Not" text="不" />
+		<entry name="Delete" text="删除" />
+		<entry name="False" text="假" />
+		<entry name="Import" text="导入" />
+		<entry name="Account" text="账户" />
+		<entry name="Rename" text="重命名" />
+		<entry name="Miscellaneous" text="杂项" />
+		<entry name="Clear" text="清除" />
+		<entry name="X" text="X" />
+		<entry name="Y" text="Y" />
+		<entry name="New" text="新建" />
+		<entry name="RestoreDefault" text="恢复默认" />
+		<entry name="Close" text="关闭" />
+		<entry name="Hue" text="色调" />
+		<entry name="True" text="真" />
+		<entry name="Refresh" text="刷新" />
+		<entry name="Name" text="名称" />
+		<entry name="Current" text="当前" />
+		<entry name="None" text="无" />
+		<entry name="Server" text="服务器" />
+		<entry name="View" text="视图" />
+		<entry name="Value" text="值" />
+		<entry name="Update" text="更新" />
+		<entry name="Wait" text="请稍候..." />
+		<entry name="Export" text="导出" />
+		<entry name="Set" text="设置" />
+		<entry name="Yes" text="是" />
+		<entry name="Stop" text="停止" />
+		<entry name="Preview" text="预览" />
+		<entry name="Choose" text="选择" />
+		<entry name="BoxData" text="盒子数据" />
+		<entry name="Edit" text="编辑" />
+		<entry name="Lang" text="语言" />
+		<entry name="Save" text="保存" />
+		<entry name="Remove" text="移除" />
+		<entry name="Search" text="搜索" />
+		<entry name="File" text="文件" />
+		<entry name="Tools" text="工具" />
+		<entry name="Help" text="帮助" />
+		<entry name="Next" text="下一步" />
+		<entry name="Back" text="返回" />
+		<entry name="Finish" text="完成" />
+		<entry name="Cancel" text="取消" />
+		<entry name="Error" text="错误" />
+		<entry name="Warning" text="警告" />
+		<entry name="Information" text="信息" />
+		<entry name="Question" text="问题" />
+		<entry name="OK" text="确定" />
+		<entry name="Loading" text="加载中" />
+		<entry name="Title" text="标题" />
+		<entry name="Welcome" text="欢迎" />
+	</section>
+	
+	<section name="Misc">
+		<entry name="FindItem" text="查找物品" />
+		<entry name="Skills" text="技能" />
+		<entry name="BoxTitle" text="Pandora's Box : {0} - {1}" />
+		<entry name="WebSnd" text="网页和声音" />
+		<entry name="AllSkills" text="所有技能" />
+		<entry name="SearchError" text="由于数据结构的变化，搜索结果不再有效。请重复您的搜索。" />
+		<entry name="RequestConnection" text="您尝试执行的操作需要连接到BoxServer。您希望现在连接吗？" />
+		<entry name="NoResults" text="未找到匹配项" />
+		<entry name="Connecting" text="连接中" />
+		<entry name="Log" text="日志文件" />
+		<entry name="PassSecurity" text="为了访问BoxServer功能，您必须向Pandora's Box提供您的游戏工作人员账户用户名和密码。这是敏感信息，Pandora's Box将适当处理。&#xD;&#xA;&#xD;&#xA;您的账户名称将按原样存储在配置文件的xml文件中。但是密码将使用不可逆的哈希算法进行编码。这意味着算法在编码过程中会丢失数据，因此从编码结果中检索原始密码极其困难。Pandora's box只会存储编码后的密码。您可以在profile.xml文件中看到编码结果。&#xD;&#xA;&#xD;&#xA;Pandora's Box永远不会在文件中存储您的真实密码。它只在您第一次输入时保留在内存中，直到您确认。然后只存储编码后的密码并与BoxServer交换，BoxServer对存储在RunUO服务器上的密码应用相同的算法来执行身份验证。" />
+		<entry name="ProfileImport" text="配置文件已成功导入。您希望现在加载它吗？" />
+		<entry name="Online" text="在线" />
+		<entry name="DataFolder" text="数据文件夹" />
+		<entry name="FindMob" text="查找生物" />
+		<entry name="ServerChanged" text="您的服务器设置已更改。您希望现在连接到Box Server吗？" />
+		<entry name="ProfileIOErr" text="您正在尝试导入由更新版本的Pandora's Box导出的配置文件。&#xD;&#xA;&#xD;&#xA;请在导入之前升级您的Pandora's Box版本。" />
+		<entry name="StringListTitle" text="编辑值" />
+		<entry name="FindLoc" text="查找位置" />
+		<entry name="Edit" text="右键点击编辑" />
+		<entry name="StringList" text="请在单独的行上输入每个条目。" />
+		<entry name="Offline" text="离线" />
+		<entry name="Speech" text="语音" />
+		<entry name="RemoveHue" text="移除色调" />
+		<entry name="Search" text="请输入您要搜索的文本。您可以使用以下键导航搜索结果：&#xD;&#xA;&#xD;&#xA;F5: 上一个结果&#xD;&#xA;F8: 下一个结果" />
+		<entry name="Bank" text="银行" />
+		<entry name="Players" text="玩家" />
+		<entry name="Items" text="物品" />
+		<entry name="Restock" text="补货" />
+		<entry name="Misc" text="杂项" />
+		<entry name="Cast" text="施法" />
+		<entry name="Props" text="属性" />
+		<entry name="Tele" text="传送" />
+		<entry name="Remove" text="移除" />
+		<entry name="Kill" text="杀死" />
+		<entry name="Resurrect" text="复活" />
+		<entry name="Hide" text="隐藏" />
+		<entry name="Pages" text="页面" />
+		<entry name="Who" text="谁" />
+		<entry name="Where" text="哪里" />
+		<entry name="Client" text="客户端" />
+		<entry name="ClientHandleNotFound" text="未找到客户端句柄。如果UO正在运行，请尝试设置工具 -> 选项 -> 高级 -> 使用自定义客户端" />
+	</section>
+	
+	<section name="Tips">
+		<entry name="Operators" text="可用操作符：&#xD;&#xA;&#xD;&#xA;- == : 对象属性匹配值&#xD;&#xA;- != : 对象属性不匹配值&#xD;&#xA;- &gt; : 对象属性大于值&#xD;&#xA;- &lt; : 对象属性小于值&#xD;&#xA;- &gt;= : 对象属性大于或等于值&#xD;&#xA;- &lt;= : 对象属性小于或等于值&#xD;&#xA;&#xD;&#xA;仅字符串操作符：&#xD;&#xA;&#xD;&#xA;- ==~ : 对象属性等于值，不区分大小写&#xD;&#xA;- starts : 对象属性以值开头，区分大小写&#xD;&#xA;- starts~ : 对象属性以值开头，不区分大小写&#xD;&#xA;- ends : 对象属性以值结尾，区分大小写&#xD;&#xA;- ends~ : 对象属性以值结尾，不区分大小写&#xD;&#xA;- contains : 对象属性包含值，区分大小写&#xD;&#xA;- contains~ : 对象属性包含值，不区分大小写" />
+		<entry name="Screenshot" text="左键点击截图&#xD;&#xA;右键点击访问截图管理器" />
+	</section>
+	
+	<section name="Buttons">
+		<entry name="LoadFail" text="加载按钮时发生错误。这可能是由于XML文件错误造成的。请查看日志文件了解错误详情。" />
+		<entry name="Single" text="单一命令" />
+		<entry name="Intstructions" text="按钮自定义说明&#xD;&#xA;&#xD;&#xA;您可以为每个鼠标按钮分配不同的操作。以下是您可以配置的操作列表：&#xD;&#xA;&#xD;&#xA;- 无：按钮将不执行任何操作。&#xD;&#xA;&#xD;&#xA;- 单一命令：按钮将向UO发送简单命令。&#xD;&#xA;&#xD;&#xA;- 菜单：按钮将显示一个菜单，允许您选择要发送到UO的命令。&#xD;&#xA;&#xD;&#xA;- 最后命令：这将向UO发送最后发送的任何命令。这对于复杂菜单很有用，需要在另一个按钮上定义菜单后才能添加。&#xD;&#xA;&#xD;&#xA;- 多重命令：这是一个特殊的命令/菜单组合，占用两个鼠标槽。右键单击时按钮将显示命令列表：您可以选择其中一个命令作为默认命令。左键单击按钮将向UO发送默认命令。此类型的功能将忽略按钮标题，因为它将根据选择的默认命令进行更改。&#xD;&#xA;&#xD;&#xA;- 修饰符命令：此行为允许您指定一个命令，该命令将在左键单击按钮时使用。右键单击按钮时，修饰符菜单将弹出，允许您使用选定的修饰符发送命令。&#xD;&#xA;&#xD;&#xA;为按钮分配功能后，您可以右键单击相应的链接来编辑现有功能，而不是创建新功能。" />
+		<entry name="EnterCommand" text="输入命令" />
+		<entry name="ConfirmClear" text="您确定要移除当前按钮逻辑吗？" />
+		<entry name="MultiRightClick" text="更改左键单击发送的默认命令" />
+		<entry name="LastCommand" text="最后命令" />
+		<entry name="ErasePrevious" text="这将擦除前一个项目。您确定要继续吗？" />
+		<entry name="TipLeft" text="左键点击：{0}" />
+		<entry name="SaveFail" text="保存文件时发生错误。请查看日志文件了解错误的更多信息。" />
+		<entry name="Title" text="配置按钮" />
+		<entry name="ErrCommand" text="请在确认前输入命令。" />
+		<entry name="ImportConfirm" text="导入按钮将擦除当前配置。您确定要继续吗？" />
+		<entry name="LeftMouse" text="左鼠标按钮" />
+		<entry name="TipTwoLine" text="{0}&#xD;&#xA;{1}&#xD;&#xA;Ctrl-点击编辑" />
+		<entry name="MenuDesc" text="显示菜单" />
+		<entry name="TipRight" text="右键点击：{0}" />
+		<entry name="Modifiers" text="修饰符命令" />
+		<entry name="RightMouse" text="右鼠标按钮" />
+		<entry name="Multi" text="多重命令" />
+		<entry name="ModRight" text="显示命令修饰符菜单" />
+	</section>
+	
+	<section name="WizProfile">
+		<entry name="Welcome" text="欢迎使用Pandora's Box配置向导" />
+		<entry name="Explanation" text="此向导将指导您完成配置Pandora's Box最常用选项的过程。&#xD;&#xA;&#xD;&#xA;您稍后可以从配置面板更改这些选项中的任何一个。" />
+		<entry name="Name" text="配置文件名称" />
+		<entry name="EnterName" text="请输入新配置文件的名称：" />
+		<entry name="EmptyName" text="配置文件名称不能为空。请在继续下一步之前输入一个值。" />
+		<entry name="ProfileExists" text="名为 {0} 的另一个配置文件已存在。请在继续之前选择一个不同的名称。" />
+		<entry name="DefaultProfile" text="将此设为默认配置文件" />
+		<entry name="FolderTitle" text="Ultima Online位置" />
+		<entry name="FolderDescription" text="配置运行Pandora's Box所需的mul文件位置" />
+		<entry name="FolderFound" text="向导已在您计算机上检测到Ultima Online安装，位于下面的文件夹中。如果您希望使用不同位置作为mul文件的源，请使用更改按钮选择不同的文件夹。" />
+		<entry name="FolderNotFound" text="向导在您的系统上找不到Ultima Online安装。请手动指定您的Ultima Online文件夹。&#xD;&#xA;&#xD;&#xA;如果您不指定有效的Ultima Online文件夹，旅行地图或物品预览等某些功能将不可用。" />
+		<entry name="BoxServer" text="为此配置文件启用Box Server。如果您的服务器安装了Pandora's Box提供的脚本包，请选中此项。" />
+		<entry name="CustomMaps" text="您的服务器使用自定义地图吗？" />
+		<entry name="NamesTitle" text="地图名称" />
+		<entry name="NamesDescription" text="请为您的自定义地图提供名称。" />
+		<entry name="NameMaps" text="请为您的自定义地图提供名称。&#xD;&#xA;&#xD;&#xA;您还可以选择禁用一个或多个地图。禁用的地图不会出现在旅行选项卡的选择中。" />
+		<entry name="NeedMapName" text="地图名称不能为空。请完成表单或禁用更多地图。" />
+		<entry name="FilesTitle" text="地图位置文件" />
+		<entry name="FilesDescription" text="您可以将自定义位置文件添加到自定义地图中。" />
+		<entry name="ImgTtitle" text="地图图像" />
+		<entry name="ImgDescription" text="Pandora's Box现在将为世界地图查看器生成地图文件的图像。" />
+		<entry name="CustomMapTitle" text="自定义地图" />
+		<entry name="MulManage" text="点击此处管理Pandora's Box使用的每个UO文件的位置。" />
+		<entry name="PassSecurity" text="点击此处了解有关您账户信息安全性的信息。" />
+		<entry name="LanguageSelection" text="语言选择" />
+		<entry name="ChooseLang" text="请选择您希望用于此配置文件的语言：" />
+		<entry name="EndTitle" text="配置文件已创建" />
+		<entry name="EndDescription" text="您的配置文件已创建并可以使用。您还可以将其设置为启动时加载的默认配置文件。" />
+		<entry name="ProfileWizard" text="配置向导" />
+		<entry name="CustomMapsQuestion" text="您的服务器使用自定义地图吗？" />
+		<entry name="CustomMapsYes" text="是" />
+		<entry name="CustomMapsNo" text="否" />
+		<entry name="UltimaOnlineLocation" text="Ultima Online位置" />
+		<entry name="ConfigureMulFiles" text="配置运行Pandora's Box所需的mul文件位置" />
+		<entry name="WizardNotFoundUO" text="向导在您的系统上找不到Ultima Online安装。请手动指定您的Ultima Online文件夹。" />
+		<entry name="FeaturesNotAvailable" text="如果您不指定有效的Ultima Online文件夹，旅行地图或物品预览等某些功能将不可用。" />
+	</section>
+	<section name="Tabs">
+		<entry name="Deco" text="装饰" />
+		<entry name="Map" text="地图" />
+		<entry name="NPCs" text="NPC" />
+		<entry name="Lights" text="灯光" />
+		<entry name="Items" text="物品" />
+		<entry name="Doors" text="门" />
+		<entry name="Server" text="服务器" />
+		<entry name="Admin" text="管理" />
+		<entry name="Notes" text="笔记" />
+		<entry name="Profiles" text="配置文件" />
+		<entry name="General" text="常规" />
+		<entry name="Custom" text="自定义" />
+		<entry name="Adv" text="高级" />
+		<entry name="Tools" text="工具" />
+		<entry name="Props" text="属性" />
+		<entry name="Art" text="艺术" />
+		<entry name="Travel" text="旅行" />
+	</section>
+	<section name="General">
+		<entry name="SM" text="员工消息" />
+		<entry name="Cmd" text="命令" />
+		<entry name="Bag" text="在背包中" />
+		<entry name="EditPresets" text="编辑预设" />
+		<entry name="BCast" text="广播" />
+		<entry name="Light" text="灯光" />
+		<entry name="Tell" text="私聊" />
+		<entry name="All" text="全部" />
+		<entry name="You" text="你" />
+		<entry name="Dupe" text="复制" />
+		<entry name="Snd" text="声音" />
+		<entry name="AddCurrPreset" text="添加到预设" />
+		<entry name="ChooseSnd" text="选择声音" />
+		<entry name="priv" text="私密声音" />
+		<entry name="www" text="网页" />
+	</section>
+	<section name="Items">
+		<entry name="NoName" text="请为您的物品指定一个名称。" />
+		<entry name="Add" text="添加物品" />
+		<entry name="ItemID" text="设置物品ID" />
+		<entry name="NoCtor" text="没有可用的额外构造函数" />
+		<entry name="DelItem" text="您确定要删除此物品吗？" />
+		<entry name="ToPack" text="到背包" />
+		<entry name="DelCat" text="此操作将删除所选节点中的所有物品和子类别。您确定要继续吗？" />
+	</section>
+	<section name="Deco">
+		<entry name="CustomNode" text="自定义装饰" />
+		<entry name="ConfirmDelCat" text="您即将删除一个类别及其所有项目。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="NoName" text="请为此项目输入一个名称。" />
+		<entry name="cmCat" text="添加类别" />
+		<entry name="TipNudgeUp" text="右键点击批量向上移动。" />
+		<entry name="NoResults" text="没有物品匹配您的搜索。" />
+		<entry name="cmDelete" text="删除" />
+		<entry name="Tile" text="瓦片" />
+		<entry name="Title" text="自定义装饰" />
+		<entry name="Static" text="静态" />
+		<entry name="NoIDFound" text="未找到ID {0}。" />
+		<entry name="TipNudgeDown" text="右键点击批量向下移动。" />
+		<entry name="cmItem" text="添加物品" />
+		<entry name="Hued" text="着色" />
+	</section>
+	<section name="Travel">
+		<entry name="Find" text="查找位置" />
+		<entry name="ConfirmDelCat" text="这将删除当前节点和其中包含的所有数据。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="Send" text="发送" />
+		<entry name="GetFromMap" text="从地图获取位置" />
+		<entry name="Go" text="前往" />
+		<entry name="World" text="世界地图" />
+		<entry name="SetMap" text="设置地图" />
+		<entry name="SpawnTipDetailed" text="数量: {0}    范围: {1}    团队: {2}&#xD;&#xA;延迟: {3}:{4}:{5} - {6}:{7}:{8}&#xD;&#xA;&#xD;&#xA;生物: {9}" />
+		<entry name="NewCat" text="添加主类别" />
+		<entry name="SpawnDetails" text="生成详情" />
+		<entry name="GetFromClient" text="从客户端获取位置" />
+		<entry name="WrongMap" text="您的客户端当前设置为与您正在编辑的地图不同的地图。只会使用有关您坐标的信息。&#xD;&#xA;&#xD;&#xA;如果您希望向不同的地图添加位置，请通过在旅行树中选择适当的分支来执行此操作。" />
+		<entry name="ConfirmDelLoc" text="您确定要删除此位置吗？" />
+		<entry name="ZoomIN" text="放大" />
+		<entry name="ZoomOut" text="缩小" />
+		<entry name="NewLoc" text="添加新位置" />
+		<entry name="NewSub" text="添加子类别" />
+		<entry name="NoMaps" text="此配置文件未定义地图。" />
+	</section>
+	<section name="Admin">
+		<entry name="ProcessFound" text="找到服务器" />
+		<entry name="ProcessNotFound" text="未找到服务器" />
+		<entry name="CmdArgs" text="参数" />
+		<entry name="SpecifyServer" text="请为服务器可执行文件指定有效位置。" />
+		<entry name="Control" text="控制" />
+		<entry name="Process" text="服务器进程" />
+		<entry name="Hide" text="隐藏控制台" />
+		<entry name="NoServerFile" text="指定的服务器可执行文件无效。请更改它并重试。" />
+		<entry name="World" text="世界" />
+		<entry name="Show" text="显示控制台" />
+		<entry name="Stopped" text="服务器已停止" />
+		<entry name="Statics" text="静态" />
+		<entry name="Running" text="服务器运行中" />
+	</section>
+	<section name="ClientList">
+		<entry name="Client" text="客户端信息" />
+		<entry name="Acc" text="查看账户" />
+		<entry name="Props" text="查看属性" />
+		<entry name="Control" text="客户端控制" />
+		<entry name="Title" text="客户端列表" />
+		<entry name="Serial" text="序列号" />
+		<entry name="Login" text="登录时间" />
+		<entry name="Go" text="前往" />
+	</section>
+	<section name="Options">
+		<entry name="Opacity" text="透明度" />
+		<entry name="XClose" text="使用X按钮最小化" />
+		<entry name="NOUOFolder" text="未检测到UO文件夹" />
+		<entry name="Topmost" text="总是置顶" />
+		<entry name="CalcMaps" text="刷新世界地图图像" />
+		<entry name="ImportSpawns" text="导入生成数据" />
+		<entry name="Movedown" text="向下移动" />
+		<entry name="ArtPreview" text="艺术预览" />
+		<entry name="TravelFormat" text="您可以通过使用以下术语而不是相应的值来定义发送和前往命令中使用的格式：&#xD;&#xA;&#xD;&#xA;{x}, {y}, {z} 用于三个x,y,z坐标&#xD;&#xA;{map} 用于地图名称&#xD;&#xA;&#xD;&#xA;Pandora's Box为您提供了一个自定义脚本，创建自定义GoMap命令。此自定义命令的格式为：&#xD;&#xA;&#xD;&#xA;GoMap {x} {y} {z} {map}&#xD;&#xA;&#xD;&#xA;它将把您传送到正确的地图平面。如果您决定坚持使用默认命令，可以选中SetMy Map复选框，以便在前往目的地之前设置您的地图。请注意，发送给玩家时您必须手动设置地图。" />
+		<entry name="SHA1" text="服务器使用SHA1哈希" />
+		<entry name="Scale" text="缩放高物品的图片" />
+		<entry name="SetMap" text="前往时设置我的地图" />
+		<entry name="Tray" text="最小化到托盘" />
+		<entry name="Modifiers" text="修饰符" />
+		<entry name="SpawnColor" text="选择在地图上显示生成物时使用的颜色" />
+		<entry name="OverwriteGroups" text="这将擦除您当前的所有生成组。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="ArtBack" text="更改背景颜色" />
+		<entry name="ShowSpawns" text="显示生成物（需要生成数据）" />
+		<entry name="FlatBtn" text="使用扁平按钮" />
+		<entry name="OriginalNames" text="在游戏中设置地图时使用原始地图名称" />
+		<entry name="OverwriteSpawns" text="这将擦除当前显示的所有生成物。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="Go" text="前往" />
+		<entry name="Moveup" text="向上移动" />
+		<entry name="PassUpdated" text="您的密码已成功更新。" />
+		<entry name="UseBoxServer" text="使用Box服务器" />
+		<entry name="BoxData" text="导入Box数据" />
+		<entry name="Title" text="配置面板" />
+		<entry name="GlobalWarn" text="使用全局和在线修饰符时警告" />
+		<entry name="WrongUOFolder" text="您提供的文件夹似乎不包含有效的MUL文件，未被接受。请选择不同的位置。" />
+		<entry name="DefLoc" text="恢复默认位置文件" />
+		<entry name="Taskbar" text="在任务栏中显示" />
+		<entry name="CustomClient" text="使用自定义客户端" />
+		<entry name="DefLocWarn" text="执行此操作时，您将丢弃对当前位置数据文件所做的任何更改。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="MulManage" text="UO文件管理" />
+		<entry name="DataFolder" text="查看Pandora's Box应用程序数据文件夹。" />
+		<entry name="Commands" text="命令" />
+		<entry name="Window" text="窗口" />
+		<entry name="SHA1CheckWarn" text="您已更改密码加密方法。请重新输入密码并使用更新按钮重新编码。" />
+		<entry name="OverwriteBoxData" text="此操作将覆盖您当前BoxData中的所有信息。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="ResetDefault" text="重置默认配置文件" />
+		<entry name="ModWarn" text="选中的修饰符在使用时将显示警告。" />
+		<entry name="CurrProf" text="当前配置文件" />
+		<entry name="ServAddress" text="服务器地址" />
+		<entry name="User" text="用户名" />
+		<entry name="OverwriteMap" text="这将删除当前在选定地图上加载的所有位置。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="ImportGroups" text="导入生成组" />
+		<entry name="Pw" text="密码" />
+		<entry name="MulManage2" text="点击此处管理Pandora's Box如何定位UO文件。" />
+		<entry name="UOFolder" text="Ultima Online文件夹" />
+		<entry name="UseCustomFolder" text="指定自定义Ultima Online文件夹" />
+		<entry name="CustomizeCommands" text="前往和发送命令" />
+		<entry name="RotateMap" text="旋转地图" />
+		<entry name="RoomView" text="对物品使用房间视图" />
+		<entry name="CustomDeco" text="显示自定义装饰部分" />
+		<entry name="Send" text="发送" />
+		<entry name="Animate" text="动画NPC" />
+		<entry name="ServPort" text="服务器端口" />
+		<entry name="TabStartup" text="启动时选择此标签：" />
+		<entry name="DefaultProf" text="默认配置文件：{0}" />
+		<entry name="SelectedMapLocations" text="仅显示选定地图的位置" />
+		<entry name="ImportData" text="导入数据文件" />
+		<entry name="ConnStartup" text="启动时连接到服务器" />
+		<entry name="LinkColor" text="链接颜色" />
+		<entry name="OverwriteProps" text="这将替换您当前的属性。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="DrawStatics" text="在地图上绘制静态物品" />
+		<entry name="CmdPrefix" text="命令前缀" />
+	</section>
+	
+	<section name="Tools">
+		<entry name="Startup" text="当Pandora's Box启动时运行此程序" />
+		<entry name="FormTitle" text="创建新的启动器条目" />
+		<entry name="Launcher" text="启动器" />
+		<entry name="ClientMap" text="客户端地图" />
+		<entry name="Args" text="请在下面输入任何额外的命令行参数（可选）" />
+		<entry name="LaunchErr" text="运行指定应用程序时发生错误。错误已记录在日志文件中。" />
+		<entry name="Browse" text="使用浏览按钮定位您希望启动的文件" />
+		<entry name="Desc" text="请为您的启动器条目输入一个名称" />
+	</section>
+	
+	<section name="Notes">
+		<entry name="Normal" text="普通" />
+		<entry name="DelLoc" text="删除位置" />
+		<entry name="AddLoc" text="添加位置" />
+		<entry name="Locs" text="位置" />
+		<entry name="New" text="新笔记" />
+		<entry name="Low" text="低" />
+		<entry name="Date" text="日期" />
+		<entry name="High" text="高" />
+		<entry name="Descending" text="降序" />
+		<entry name="Created" text="创建于 {0} 在 {1}" />
+		<entry name="Priority" text="优先级" />
+		<entry name="Urgent" text="紧急" />
+		<entry name="Ascending" text="升序" />
+	</section>
+	
+	<section name="Cap">
+		<entry name="Title" text="截图管理" />
+		<entry name="DelFolder" text="您即将删除一个文件夹。此操作还将删除其所有子文件夹以及其中存储的任何截图。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="SaveAs" text="另存为..." />
+		<entry name="CreateFold" text="创建文件夹" />
+	</section>
+	
+	<section name="Mul">
+		<entry name="Title" text="UO文件管理" />
+		<entry name="NotFound" text="未找到文件。请手动设置。" />
+		<entry name="SelFile" text="选中的文件" />
+		<entry name="CustFolder" text="自定义UO文件夹" />
+		<entry name="DefFolder" text="默认UO文件夹" />
+	</section>
+	
+	<section name="Spawns">
+		<entry name="mDelete" text="删除项目" />
+		<entry name="NoName" text="请为您的生成物输入一个名称。" />
+		<entry name="Drop" text="拖放到此处" />
+		<entry name="Exists" text="该项目已列出。" />
+		<entry name="Instructions" text="从Pandora's Box拖放条目，或使用右侧的文本字段手动添加它们。" />
+		<entry name="Added" text="已添加" />
+		<entry name="Title" text="生成组编辑器" />
+		<entry name="List" text="生物列表" />
+		<entry name="mClear" text="清除全部" />
+		<entry name="Empty" text="此生成物为空。请添加一些生物或物品。" />
+	</section>
+	
+	<section name="Doors">
+		<entry name="Lock" text="锁定门" />
+		<entry name="Unlock" text="解锁门" />
+		<entry name="Select" text="选择一扇门" />
+	</section>
+	
+	<section name="Roofing">
+		<entry name="ServCP" text="控制面板" />
+		<entry name="TileSet" text="瓦片集：" />
+		<entry name="Tent" text="帐篷" />
+		<entry name="Slope" text="斜坡" />
+		<entry name="Generate" text="生成" />
+		<entry name="FromCli" text="从客户端获取" />
+		<entry name="NewSection" text="添加屋顶部分" />
+		<entry name="TestRest" text="您希望生成剩余的部分吗？" />
+		<entry name="Left" text="左" />
+		<entry name="UseCli" text="使用客户端" />
+		<entry name="EmptyRoof" text="无法添加空屋顶" />
+		<entry name="Bottom" text="底部" />
+		<entry name="Add" text="添加部分" />
+		<entry name="Remove" text="移除最后" />
+		<entry name="Point2" text="点2" />
+		<entry name="Title" text="屋顶建造器" />
+		<entry name="Point1" text="点1" />
+		<entry name="Test" text="测试" />
+		<entry name="Right" text="右" />
+		<entry name="NotOddWide" text="此屋顶部分不是奇数宽度，看起来会很奇怪。您确定要添加它吗？" />
+		<entry name="UseSer" text="使用BoxServer" />
+		<entry name="Height" text="高度" />
+		<entry name="MissTiles" text="此瓦片集无法生成您请求的屋顶。缺失的部分用红色标记。您希望无论如何都生成此屋顶吗？" />
+		<entry name="Up" text="向上" />
+		<entry name="CantAdd" text="无法添加选中的矩形。" />
+		<entry name="AlreadyAdded" text="您已经添加了此矩形" />
+		<entry name="Roofing" text="屋顶" />
+		<entry name="Gen" text="生成" />
+		<entry name="ClearAll" text="您确定要清除您的屋顶吗？" />
+		<entry name="Top" text="顶部" />
+	</section>
+	
+	<section name="NPCs">
+		<entry name="MinTime" text="延迟：最小 - 最大" />
+		<entry name="mMobBodyMod" text="设置身体修改" />
+		<entry name="mMobDelete" text="删除" />
+		<entry name="Range2ToolTip" text="这是一个额外的字段，可以在生成器构造函数中使用。它在默认版本中不使用，但您可以使用它为自定义生成器添加进一步的属性。例如，当使用David的生成器时，您可以使用此参数来表示SpawnRange属性。&#xD;&#xA;&#xD;&#xA;您可以在命令选项中使用{extra}参数在生成命令中启用此参数。" />
+		<entry name="mMobBody" text="设置身体" />
+		<entry name="SpawnRange" text="额外" />
+		<entry name="SpawnGroups" text="生成组" />
+		<entry name="mCatRename" text="重命名" />
+		<entry name="Range" text="范围" />
+		<entry name="mMobEdit" text="编辑" />
+		<entry name="mMobAddMob" text="添加生物" />
+		<entry name="DeleteSpawns" text="您即将删除包含生成组的部分。这将擦除其中定义的所有生成物。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="NameError" text="生物的名称不能为空。请在确认添加之前指定一个名称。" />
+		<entry name="mCatAddSub" text="添加子部分" />
+		<entry name="mMobAddSpawn" text="添加生成组" />
+		<entry name="ToSpawn" text="到生成" />
+		<entry name="ConfirmDel" text="您确定要移除选中的项目吗？" />
+		<entry name="mCatAddCat" text="添加主类别" />
+		<entry name="mCatDelete" text="删除" />
+		<entry name="Amount" text="数量" />
+		<entry name="MaxTime" text="最大时间" />
+		<entry name="BigSpawn" text="生成" />
+		<entry name="Team" text="团队" />
+		<entry name="Spawn" text="生成" />
+		<entry name="DeleteCat" text="您即将从您的生物列表中删除一个类别。这将移除所有子类别以及所选节点中包含的生物定义。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+	</section>
+	
+	<section name="Script">
+		<entry name="Exit" text="退出远程脚本资源管理器" />
+		<entry name="NotRegistered" text="您的用户名尚未注册以访问服务器脚本。联系您的服务器管理员以获得对BoxServer此功能的访问权限。" />
+		<entry name="DelOk" text="项目已删除" />
+		<entry name="UnexpectedErr" text="失败：意外的服务器错误。" />
+		<entry name="FileNotFound" text="失败：未找到文件。" />
+		<entry name="CrateOk" text="文件夹已创建" />
+		<entry name="Download" text="下载选中的文件" />
+		<entry name="WriteErr" text="文件可能无法保存。下载成功但发生了本地错误。有关错误的详细信息已记录。" />
+		<entry name="UploadOk" text="上传成功" />
+		<entry name="Delete" text="删除当前选中的项目" />
+		<entry name="RenFail" text="重命名失败" />
+		<entry name="DelErr" text="发生错误：选中的项目未被删除" />
+		<entry name="Title" text="远程脚本资源管理器" />
+		<entry name="ExtError" text="不允许更改扩展名" />
+		<entry name="GenericErr" text="错误：操作失败。" />
+		<entry name="Refresh" text="刷新文件夹列表" />
+		<entry name="RenOk" text="项目已重命名" />
+		<entry name="ReadErr" text="本地读取错误：无法打开选中的文件。" />
+		<entry name="ConfirmDel" text="您即将从服务器中移除一个或多个项目。这无法撤销。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="UploadFail" text="上传失败" />
+		<entry name="CurrFold" text="当前文件夹" />
+		<entry name="CreateFail" text="文件夹未创建" />
+		<entry name="CreateFolder" text="在服务器上创建新文件夹" />
+		<entry name="DownOk" text="文件 {0} 已下载并保存到 {1}" />
+		<entry name="Upload" text="将文件上传到选中的文件夹" />
+	</section>
+	
+	<section name="Commands">
+		<entry name="Online" text="在线" />
+		<entry name="Multi" text="多重" />
+		<entry name="Self" text="自己" />
+		<entry name="Global" text="全局" />
+		<entry name="Area" text="区域" />
+		<entry name="SetHue" text="可用变量：&#xD;&#xA;&#xD;&#xA;{hue} : 正在设置的色调值" />
+		<entry name="Spawn" text="可用属性：&#xD;&#xA;&#xD;&#xA;{creature} - 在NPC标签中选择的生物名称。&#xD;&#xA;{amount}, {min}, {max}, {team}, {range} 对应于生成配置中的值。&#xD;&#xA;{extra} 是一个额外的参数，可以与自定义生成器一起使用。" />
+		<entry name="SetMap" text="可用变量：&#xD;&#xA;&#xD;&#xA;{map} : 对应于目标地图的值。" />
+		<entry name="Single" text="单一" />
+		<entry name="Go" text="可用变量：&#xD;&#xA;&#xD;&#xA;{x}, {y}, {z} : 目标位置的x, y和z坐标&#xD;&#xA;{map} : 对应于目标位置所在地图平面的值" />
+	</section>
+	
+	<section name="Props">
+		<entry name="Seconds" text="秒" />
+		<entry name="mSet" text="mSet" />
+		<entry name="Check" text="检查条件" />
+		<entry name="Milli" text="毫秒" />
+		<entry name="SelectEnum" text="选择可能值之一：" />
+		<entry name="AllProps" text="显示所有属性" />
+		<entry name="Numeric" text="此属性的值是一个数字。某些属性可能会限制接受值的范围。" />
+		<entry name="DelPreset" text="删除预设" />
+		<entry name="Set" text="设置" />
+		<entry name="NoType" text="请输入类型" />
+		<entry name="AddPres" text="添加到预设" />
+		<entry name="NoClassMatch" text="未找到与搜索对应的类。" />
+		<entry name="AddCond" text="添加条件" />
+		<entry name="Value" text="值" />
+		<entry name="Cond" text="条件" />
+		<entry name="TimeSpan" text="时间跨度" />
+		<entry name="Get" text="获取" />
+		<entry name="Text" text="此属性接受文本作为其值。" />
+		<entry name="Other" text="没有关于此属性接受值的额外信息。" />
+		<entry name="Hours" text="小时" />
+		<entry name="Op" text="操作符" />
+		<entry name="Minutes" text="分钟" />
+		<entry name="AllClasses" text="显示所有类型" />
+		<entry name="DateTime" text="日期和时间" />
+		<entry name="Days" text="天" />
+		<entry name="Type" text="使用过滤器" />
+		<entry name="gSet" text="gSet" />
+		<entry name="FB" text="过滤器构建器" />
+		<entry name="AddPreset" text="将此过滤器添加到预设" />
+		<entry name="Property" text="属性" />
+	</section>
+	
+	<section name="Theater">
+		<entry name="VarsDesc" text="使用此变量替换语音或命令中的任何文本。值将在播放开始时输入。" />
+		<entry name="ActorsEvent" text="创建NPC事件" />
+		<entry name="EditActor" text="创建NPC" />
+		<entry name="Vars" text="变量" />
+		<entry name="VarName" text="变量名称" />
+		<entry name="DefaultWait" text="请点击确定按钮继续播放" />
+		<entry name="CtorName" text="NPC名称" />
+		<entry name="EnterVars" text="请输入将在当前播放中使用的变量。" />
+		<entry name="YOff" text="Y偏移" />
+		<entry name="XOff" text="X偏移" />
+		<entry name="VarExists" text="此变量已存在。请选择不同的名称。" />
+		<entry name="Location" text="设置相对于您角色站立位置的X和Y偏移。" />
+		<entry name="PropExists" text="选中的属性已设置。请修改现有值。" />
+		<entry name="VarVal" text="变量值" />
+		<entry name="CantCalibrate" text="Pandora无法校准您的UO客户端，因此无法检索有关您位置的信息。请求的NPC未被创建。" />
+		<entry name="FillVar" text="请先填写所有字段。" />
+		<entry name="Prop" text="在NPC上设置额外属性" />
+	</section>
+	
+	<section name="Server">
+		<entry name="PleaseConnect" text="请在访问此功能之前连接到BoxServer。" />
+		<entry name="ScriptEx" text="脚本资源管理器" />
+		<entry name="RndTile" text="随机瓦片器" />
+		<entry name="GetSpawn" text="获取生成信息（生成数据）" />
+		<entry name="GetProps" text="获取属性信息（属性数据）" />
+		<entry name="CantWriteFile" text="文件已成功从服务器下载，但在写入指定位置时发生错误。更多详细信息包含在日志文件中。" />
+		<entry name="Datafiles" text="数据文件" />
+		<entry name="Login" text="登录" />
+		<entry name="GetBox" text="获取物品和生物定义（盒子数据）" />
+	</section>
+	
+	<section name="Messages">
+		<entry name="DelLoc" text="您确定要删除选中的位置吗？" />
+		<entry name="DelProfile" text="这将擦除当前配置文件中包含的所有信息。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="MapImgError" text="发生错误，地图 {0} 在此配置文件中已被禁用。请查看日志以了解有关错误的更多信息。" />
+		<entry name="DelConfirm" text="您确定要删除该项目吗？" />
+		<entry name="DelCurrentProfile" text="您选择删除当前加载的配置文件。这将重新启动Pandora's Box并擦除此配置文件中包含的所有信息。&#xD;&#xA;&#xD;&#xA;您确定要继续吗？" />
+		<entry name="NewLocErr" text="无法添加新位置，因为类别树上选中的节点不正确。请向作者报告此错误。" />
+		<entry name="GenericError" text="发生了意外错误。详细信息已记录在日志文件中。&#xD;&#xA;&#xD;&#xA;如果您希望支持开发，请联系作者并提供您的日志文件。" />
+	</section>
+	
+	<section name="Lights">
+		<entry name="SetMsg" text="请点击您希望设置为通过装饰部分添加的所有物品的默认灯光。&#xD;&#xA;&#xD;&#xA;注意：并非所有物品都支持光源。" />
+		<entry name="NoLight" text="无灯光" />
+		<entry name="SetDeco" text="装饰的默认灯光" />
+	</section>
+	
+	<section name="ProfileChooser">
+		<entry name="Title" text="配置文件选择器" />
+		<entry name="ToolTip" text="选中复选框以选择配置文件作为默认值。" />
+		<entry name="Default" text="设为默认" />
+	</section>
+	
+	<section name="HuePicker">
+		<entry name="Groups" text="色调组编辑器" />
+		<entry name="RoomView" text="房间视图" />
+		<entry name="Animate" text="动画NPC" />
+		<entry name="Instructions" text="在创建选择之前，请确保使用新建按钮创建新条目，并在窗口左上角的组合框中选择它。&#xD;&#xA;&#xD;&#xA;选择色调：&#xD;&#xA;&#xD;&#xA;- 左键点击并拖拽选择色调。&#xD;&#xA;- Ctrl + 点击色调如果已选中则取消选择。&#xD;&#xA;- 点击一个色调，然后shift + 点击另一个色调以选择它们之间的整个色调范围。&#xD;&#xA;&#xD;&#xA;一旦您对选择满意，请确保点击更新按钮以将您的选择保存到当前模板。" />
+		<entry name="Title" text="Pandora's Box色调选择器" />
+		<entry name="SelHue" text="请选择一个色调..." />
+		<entry name="DeleteGroup" text="您确定要删除此组吗？" />
+		<entry name="Scale" text="缩放" />
+	</section>
+	
+	<section name="Errors">
+		<entry name="NoData" text="您请求的数据在服务器上不可用。联系您的服务器管理员生成它。" />
+		<entry name="ConnectionLost" text="与服务器通信时发生错误。&#xD;&#xA;&#xD;&#xA;这可能是由于连接丢失或远程脚本中的错误造成的。您可以在Pandora's Box文件夹中的BoxLog.txt文件中找到有关错误的更多详细信息。" />
+		<entry name="NoServer" text="您尝试使用的功能需要连接到Box服务器。请在程序选项中配置服务器以访问它。" />
+		<entry name="GenServErr" text="BoxServer在处理您的请求时遇到错误。服务器说：&#xD;&#xA;&#xD;&#xA;{0}" />
+		<entry name="NotOnline" text="身份验证失败：您必须登录到服务器才能访问此功能。" />
+		<entry name="Generic" text="服务器返回了未知错误。" />
+		<entry name="DelProfileErr" text="无法删除选中的配置文件。有关发生的错误的详细信息已记录在日志文件中。" />
+		<entry name="ServerError" text="BoxServer安装在远程系统上。但是安装似乎不完整，缺少必需的文件（BoxServer.cs）。请联系您的服务器管理员修复此问题。" />
+		<entry name="CantDelButton" text="处理请求时发生错误：无法删除文件 {0}。" />
+		<entry name="ServerConnection" text="到服务器的连接失败。确保防火墙没有阻止您，并确保服务器已启动并正确配置以提供BoxServer连接。" />
+		<entry name="WrongFile" text="选中的文件已损坏或不包含此过程的有效数据。&#xD;&#xA;&#xD;&#xA;操作已中止。" />
+		<entry name="LoginAccess" text="身份验证失败：您的访问级别不够高，无法使用此功能；" />
+		<entry name="LogUnregistered" text="身份验证失败：您的账户尚未注册以访问此功能。请联系您的服务器管理员进行注册。" />
+		<entry name="Spawn" text="保存的生成参数无法正确解释。某些值可能未正确保存。" />
+		<entry name="AccessLevel" text="您的访问级别不够高，无法访问Pandora's Box服务器扩展。" />
+		<entry name="NotSupported" text="请求的功能尚未安装在服务器上。请联系您的服务器管理员安装它。" />
+		<entry name="WrongCredentials" text="身份验证失败：提供的凭据无效。" />
+		<entry name="ProfExists" text="您选择的名称已被另一个配置文件使用。此更改尚未提交。" />
+		<entry name="ModifierWarn" text="您即将使用的修饰符需要额外确认。您确定要使用以下内容吗：&#xD;&#xA;&#xD;&#xA;{0}" />
+	</section>
+	
+	<section name="World">
+		<entry name="Big" text="大" />
+		<entry name="NoImage" text="显示预生成地图图像时发生错误。您可以在程序日志中找到详细信息。您可以通过从配置面板运行图像生成过程来尝试纠正此错误。" />
+		<entry name="WorldMap" text="世界地图" />
+		<entry name="Small" text="小" />
+	</section>
+	
+	<section name="Random">
+		<entry name="TileSet" text="选择瓦片集" />
+		<entry name="EditTile" text="编辑瓦片集" />
+		<entry name="BrushDesc" text="此功能类似于随机区域瓦片器，但使用较小的画笔（最大尺寸15x15）来填充区域，为游戏中的用户提供目标。" />
+		<entry name="Hgt" text="  高度" />
+		<entry name="RndHue" text="随机色调" />
+		<entry name="NoMap" text="为了使用此功能，您必须指定将在其上发生瓦片的地图。Pandora's Box使用它来计算每个瓦片的高度，这是一个必需参数。" />
+		<entry name="NoHue" text="无色调" />
+		<entry name="Drag" text="从装饰部分拖放物品以快速将其添加到模板。" />
+		<entry name="AddItems" text="为每行添加单个物品ID，或从装饰部分拖放物品以添加它。" />
+		<entry name="SingleDesc" text="此功能使用BoxServer一个接一个地添加几个随机物品。执行时，此功能将在游戏中为您提供目标。多次使用目标将允许您从左边的瓦片集中随机选择物品，并根据您的选择进行着色。" />
+		<entry name="AreaDesc" text="此功能在由矩形指定的区域上随机瓦片物品。填充滑块指定将被填充的区域百分比。" />
+		<entry name="Purge" text="{0} 个模板已从列表中移除，因为它们为空。" />
+		<entry name="Area" text="区域瓦片" />
+		<entry name="Quick" text="快速添加" />
+		<entry name="NoRndHue" text="您选择使用随机着色但尚未为此操作指定随机色调模板。请先定义随机色调组。" />
+		<entry name="Wdth" text="  宽度" />
+		<entry name="NoTile" text="请先选择瓦片集。" />
+		<entry name="labFill" text="填充百分比：{0}%" />
+		<entry name="Brush" text="画笔" />
+		<entry name="ItemRnd" text="物品随机化器" />
+		<entry name="SelHue" text="选中的色调" />
+		<entry name="InvalidIDs" text="未指定有效的物品ID。" />
+		<entry name="EditHue" text="编辑色调" />
+		<entry name="Esplicit" text="明确添加物品" />
+	</section>
+</Data>

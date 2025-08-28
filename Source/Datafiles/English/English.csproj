@@ -25,6 +25,8 @@
     </StartupObject>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -94,6 +96,7 @@
   <ItemGroup>
     <Reference Include="System">
       <Name>System</Name>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -109,4 +112,8 @@
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
+  <Target Name="AfterBuild">
+    <Delete Files="$(OutputPath)BoxCL.dll" />
+    <Delete Files="$(OutputPath)BoxCL.pdb" />
+  </Target>
 </Project>
